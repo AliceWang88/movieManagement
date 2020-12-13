@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",   // 编译后 代码的语法版本标准                       
+    "module": "commonjs",  // 编译后 模块化标准                
+    "outDir":"./dist",  // 输出目录
+    "experimentalDecorators": true, // TS中使用装饰器
+    "emitDecoratorMetadata": true, // 类型检查错误时，不能编译
+    "strictNullChecks": true,  // 只能赋值给自己
+    "removeComments": true,  // 移除掉注释
+    "noEmitOnError": true,  // 类型检查错误时，不能编译
+    "lib": ["ESNext"], // 编译前 环境可以尽量新一点，最终是要经过编译的
+    "esModuleInterop":true, // commonJS模块 用import正常导入
+    "noImplicitUseStrict": true // commonJS模块默认开启严格模式，设为不开启
+  },
+  "include":["./src"]  // ts需编译目录
+}
